@@ -3,7 +3,7 @@ package com.blog.mapandflatmap
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 
-object FlatMapOnFuture extends App{
+object FlatMapOnFuture {
   val res: Future[Future[List[Int]]] = FutureRunningTasksFlat.futureTask
 //  Thread.sleep(3000)
 
